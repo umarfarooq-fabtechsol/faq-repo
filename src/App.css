@@ -1,0 +1,38 @@
+/* Additional custom styles if needed */
+.faq-card {
+  transition: all 0.3s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-2px);
+}
+
+.search-input:focus {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.category-tab.active {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.expand-enter {
+  max-height: 0;
+  opacity: 0;
+}
+
+.expand-enter-active {
+  max-height: 300px;
+  opacity: 1;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.expand-exit {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.expand-exit-active {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
